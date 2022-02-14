@@ -1,7 +1,7 @@
 # 29-2nd-gream-backend
 
 ## Introduction
-그림 상품을 판매하는 커머스 사이트 Gream 사이트 구현<br>
+그림 상품을 판매하는 커머스 사이트 Gream 사이트 구현<br><br>
 신발 중개 사이트인 [Kream](https://kream.co.kr/)의 클론 코딩 프로젝트
 
 

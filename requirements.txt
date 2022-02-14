@@ -1,0 +1,6 @@
+Django==4.0.2
+django-cors-headers==3.11.0
+django-extensions==3.1.5
+mycli==1.24.3
+PyMySQL==1.0.2
+
