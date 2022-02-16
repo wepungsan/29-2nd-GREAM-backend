@@ -2,6 +2,7 @@ from django.db import models
 
 class Order(models.Model):
     order_no   = models.UUIDField()
+    bidding    = models.ForeignKey('biddings.Bidding', models.CASCADE, related_name = 'order')
     status     = models.ForeignKey('Status', models.DO_NOTHING, related_name = 'order')
     buyer      = models.ForeignKey('users.User', models.DO_NOTHING, related_name = 'buyer')
     seller     = models.ForeignKey('users.User', models.DO_NOTHING, related_name = 'seller')
