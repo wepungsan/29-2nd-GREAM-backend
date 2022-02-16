@@ -1,16 +1,17 @@
 from django.db import models
 
 class Bidding(models.Model):
-    product_id     = models.ForeignKey('Product', on_delete = models.CASCADE, related_name = 'bidding')
-    user_id        = models.ForeignKey('User', on_delete = models.CASCADE, related_name = 'bidding')
-    bid_type_id    = models.ForeignKey('Bid_type', on_delete = models.CASCADE, related_name = 'bidding')
+    product        = models.ForeignKey('products.Product', on_delete = models.CASCADE, related_name = 'bidding')
+    user           = models.ForeignKey('users.User', on_delete = models.CASCADE, related_name = 'bidding')
+    bid_type       = models.ForeignKey('Bidtype', on_delete = models.CASCADE, related_name = 'bidding')
     purchase_price = models.DecimalField(max_digits = 15, decimal_places = 2)
     count          = models.IntegerField()
+    created_at     = models.DateField() 
 
     class Meta:
         db_table = 'biddings'
 
-class Bid_Type(models.Model):
+class BidType(models.Model):
     name = models.CharField(max_length = 50)
 
     class Meta:

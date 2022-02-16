@@ -1,6 +1,8 @@
 my_settings.py
 CSV/
 *_db_uploader.py
+augmentor.py
+IMAGE/
 
 # Created by https://www.toptal.com/developers/gitignore/api/pycharm,macos,linux,visualstudiocode,python,zsh,vim
 # Edit at https://www.toptal.com/developers/gitignore?templates=pycharm,macos,linux,visualstudiocode,python,zsh,vim
