@@ -6,7 +6,6 @@ class Order(models.Model):
     status     = models.ForeignKey('Status', models.DO_NOTHING, related_name = 'order')
     buyer      = models.ForeignKey('users.User', models.DO_NOTHING, related_name = 'buyer')
     seller     = models.ForeignKey('users.User', models.DO_NOTHING, related_name = 'seller')
-    created_at = models.DateField()    
 
     class Meta:
         db_table = 'orders'
