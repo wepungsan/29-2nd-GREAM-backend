@@ -3,7 +3,7 @@ from django.db import models
 from core.models import TimeStamp
 
 class Product(TimeStamp):
-    name           = models.CharField(max_length=50)
+    name           = models.CharField(max_length=200)
     category       = models.ForeignKey('Category', on_delete = models.CASCADE, related_name = 'product')
     theme          = models.ForeignKey('Theme', on_delete = models.CASCADE, related_name ='product')
     author         = models.ForeignKey('Author', on_delete = models.CASCADE, related_name = 'product')
