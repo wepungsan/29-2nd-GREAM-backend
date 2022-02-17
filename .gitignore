@@ -3,6 +3,8 @@ CSV/
 *_db_uploader.py
 augmentor.py
 IMAGE/
+backup/
+.idea
 
 # Created by https://www.toptal.com/developers/gitignore/api/pycharm,macos,linux,visualstudiocode,python,zsh,vim
 # Edit at https://www.toptal.com/developers/gitignore?templates=pycharm,macos,linux,visualstudiocode,python,zsh,vim

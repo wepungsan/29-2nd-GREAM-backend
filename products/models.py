@@ -43,6 +43,7 @@ class Author(models.Model):
 class Wishlist(models.Model):
     product = models.ForeignKey('Product', on_delete = models.CASCADE, related_name = 'wishlist')
     user    = models.ForeignKey('users.User', on_delete = models.CASCADE, related_name = 'wishlist')
+    size    = models.ForeignKey('Size', on_delete=models.CASCADE, related_name='wishlist')
 
     class Meta:
         db_table = 'wishlists'
