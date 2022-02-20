@@ -12,14 +12,18 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 import pymysql
 
 from pathlib import Path
-from my_settings import SECRET_KEY, DATABASES
+from my_settings import SECRET_KEY, DATABASES, ALGORITHM, REDIRECT_URI, KAKAO_API_KEY
 
 pymysql.install_as_MySQLdb()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+KAKAO_API_KEY = KAKAO_API_KEY
 
+REDIRECT_URI = REDIRECT_URI
+
+ALGORITHM = ALGORITHM
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
@@ -31,8 +35,6 @@ SECRET_KEY = SECRET_KEY
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
-
 
 # Application definition
 
@@ -133,6 +135,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 APPEND_SLASH = False
 
+CORS_ORIGIN_ALLOW_ALL = True
+
+CORS_ALLOW_CREDENTIALS = True
+
 CORS_ALLOW_METHODS = (
     'DELETE',
     'GET',
@@ -141,7 +147,7 @@ CORS_ALLOW_METHODS = (
     'POST',
     'PUT',
 )
-    
+
 CORS_ALLOW_HEADERS = (
     'accept',
     'accept-encoding',
@@ -151,5 +157,5 @@ CORS_ALLOW_HEADERS = (
     'origin',
     'user-agent',
     'x-csrftoken',
-    'x-requested-with',    		
+    'x-requested-with',
 )
