@@ -8,6 +8,7 @@ from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
 from django.views import View
 
+from core.decorator import login_decorator
 from orders.models import Order
 from products.models import Product, Wishlist, Size, Category
 from users.models import User
@@ -88,11 +89,12 @@ class ProductDetailView(View):
         }, status=200)
 
 class ProductFollowView(View):
+    @login_decorator
     def post(self, request):
         data = json.loads(request.body)
-
         try:
-            user_id = int(data['user_id'])
+            user = request.user
+            user_id = user.id
             product_id = int(data['product_id'])
             size_id = int(data['size_id'])
 
