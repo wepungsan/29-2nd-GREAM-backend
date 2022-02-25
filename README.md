@@ -1,4 +1,4 @@
-# 29-1st-FRESH-EZ-backend
+# 29-2nd-GREAM-backend
 
 > 본 repository는 웹 개발 학습을 위해 크림(https://kream.co.kr/) 사이트를 클론코딩하였습니다.
 > 짧은 기간동안 기능 구현에 보다 집중하기 위해 Users, Products 앱까지 기능 구현하였습니다.
