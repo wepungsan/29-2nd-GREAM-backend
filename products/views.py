@@ -227,23 +227,23 @@ class ProductQuoteView(View):
         str_start_date = datetime.now().strftime("%Y-%m-%d")
 
         start_date = datetime.strptime(str_start_date, "%Y-%m-%d")
-        last_date  = start_date + relativedelta(months = 1)
+        last_date  = start_date - relativedelta(months = 1)
 
         quote_dict = {}
 
         copy_start = start_date
         copy_last  = last_date
 
-        while start_date <= last_date:
-            orders     = Order.objects.filter(bidding__product = product_id, bidding__created_at = start_date)
+        while last_date <= start_date:
+            orders     = Order.objects.filter(bidding__product = product_id, bidding__created_at = last_date)
             orders_avg = orders.aggregate(quote = Avg('bidding__purchase_price'))
             if orders_avg['quote'] == None:
                 orders_avg = Order.objects.filter(
                     bidding__product = product_id,
-                    bidding__created_at__range = [copy_start, copy_last]
+                    bidding__created_at__range = [copy_last, copy_start]
                 ).aggregate(quote = Avg('bidding__purchase_price'))
-            quote_dict[str(start_date.year) + "-" + str(start_date.month) + "-" + str(start_date.day)] = orders_avg
-            start_date += timedelta(days = 1)
+            quote_dict[str(last_date.year) + "-" + str(last_date.month) + "-" + str(last_date.day)] = orders_avg
+            last_date += timedelta(days = 1)
 
         return JsonResponse({
             "quote" : quote_dict,
