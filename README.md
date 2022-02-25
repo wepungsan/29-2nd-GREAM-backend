@@ -12,7 +12,7 @@
 	+ Backend
 		+ Backend 공통: ERD, CSV Uploader
 		+ 이도운 : 상품 상세 View, 상품 입찰 목록 View, 관심 상품 추가/삭제 View, 상품 사이즈별 가격 View, 상품 시세 View, 검색 View
-		+ 이동훈 : 상품 리스트 View, 소셜 로그인 View
+		+ 이강일 : 상품 리스트 View, 소셜 로그인 View
 
 
 ## Demo
