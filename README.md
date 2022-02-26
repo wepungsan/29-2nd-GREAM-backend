@@ -22,7 +22,7 @@
 
 ## ERD
 
-![MRMRZARA](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a70f5b38-5045-4776-803d-e5de8122f4de/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220225%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220225T004945Z&X-Amz-Expires=86400&X-Amz-Signature=fa7a89f3494925e79b75cf730907f3f0c8d608529bbbce8aa9097dba6849abde&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+![MRMRZARA](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa70f5b38-5045-4776-803d-e5de8122f4de%2FUntitled.png?table=block&id=6da7bd07-f6b4-4048-939f-dfed76aa5941&spaceId=5261a9e7-e5b9-4e71-b383-63b7ad738cb5&width=2000&userId=5e824c0e-3b9f-4749-993a-65e855a84977&cache=v2)
 
 
 ## 협업 도구
