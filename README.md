@@ -22,7 +22,7 @@
 
 ## ERD
 
-![MRMRZARA](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa70f5b38-5045-4776-803d-e5de8122f4de%2FUntitled.png?table=block&id=6da7bd07-f6b4-4048-939f-dfed76aa5941&spaceId=5261a9e7-e5b9-4e71-b383-63b7ad738cb5&width=2000&userId=5e824c0e-3b9f-4749-993a-65e855a84977&cache=v2)
+![MRMRZARA](http://drive.google.com/uc?export=view&id=1WV4BBY5QvmJC6IOtYi2lnVwlScYzrgYd)
 
 
 ## 협업 도구
