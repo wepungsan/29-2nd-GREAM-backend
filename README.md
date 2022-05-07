@@ -22,7 +22,7 @@
 
 ## ERD
 
-![MRMRZARA](http://drive.google.com/uc?export=view&id=1WV4BBY5QvmJC6IOtYi2lnVwlScYzrgYd)
+![MRMRZARA](http://drive.google.com/uc?export=view&id=1Lnpy39VXunkDvZF1jbhrKeswqyy_qgBb)
 
 
 ## 협업 도구
